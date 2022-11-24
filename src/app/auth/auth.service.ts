@@ -12,6 +12,7 @@ export class AuthService {
   isAuthenticated:boolean = false
   isLoading:boolean = false
   passwordMatch:boolean = true
+  isLogin:boolean=false
   constructor(private router:Router) { }
   login(form:LogiForm){
     if(this.isLoading) return 
@@ -21,7 +22,8 @@ export class AuthService {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        this.isAuthenticated= true
+        this.isAuthenticated= true,
+        this.isLogin=true
         this.router.navigate([''])
       })
       .catch((error) => {
@@ -59,6 +61,7 @@ export class AuthService {
     signOut(auth).then(() => {
       this.router.navigate(['login']);
       this.isAuthenticated = false
+      this.isLogin=false
     }).catch((error) => {
 
     })
