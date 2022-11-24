@@ -1,0 +1,23 @@
+h1{
+    font-size: large;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.cart-comtainer{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cart-img{
+    
+}
+
+.cart-content{
+
+}
+
+.cart-btn{
+
+}
