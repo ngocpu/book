@@ -1,0 +1,39 @@
+.book-item{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+.book-img{
+    margin-left: 10px;
+}
+.book-content{
+    margin: auto;
+
+}
+.book-dess{
+    margin: 10px 0;
+}
+.book-item img{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+.book-item p{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: auto;
+}
+.book-btn{
+    display: flex;
+    justify-content: center;
+}
+.item-btn {
+    margin: 20px 0px ;
+    padding: 10px 30px;
+    justify-content: center;
+    justify-items:center ;
+}

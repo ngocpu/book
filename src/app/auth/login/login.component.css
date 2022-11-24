@@ -1,0 +1,27 @@
+.wrapp{
+    display:flex ;
+    justify-content: center;
+}
+.form-contai{
+    width: 50%;
+    margin: 10% 0;
+}
+form h1{
+    text-align: center;
+    font-size: larger;
+    color: rgb(31 41 55 / var(--tw-bg-opacity));
+    font-weight: bold;
+    margin: 10px 0;
+}
+.input-form{
+    width: 100%;
+}
+.form-btn{
+    width: 100%;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+.form-btn:hover{
+    border: 2px  solid rgb(31 41 55 / var(--tw-bg-opacity));
+    color:rgb(31 41 55 / var(--tw-bg-opacity));;
+    background-color: aliceblue;
+}

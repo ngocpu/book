@@ -1,0 +1,6 @@
+<h1>List</h1>
+<ul class=" item-list grid grid-cols-2 gap-2" >
+    <ng-container *ngFor="let singleBook  of books; let i =index">
+        <app-single-book [book]="singleBook"></app-single-book>
+    </ng-container>
+</ul>
