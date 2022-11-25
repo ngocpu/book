@@ -9,14 +9,34 @@ import { Component,OnInit,Input } from '@angular/core';
 })
 export class CartComponent implements OnInit{
   @Input() book:Book ={} as Book;
+  listItems:Array<Book> =[]
+  value:number =1
   constructor(private cartService:CartService){}
   ngOnInit(): void {
+    this.getCart()
+
     
   }
   getCart(){
-    return this.cartService.get()
+    this.listItems = this.cartService.get()
+    return this.listItems
   }
   handelremove(){
-    this.cartService.remove(this.book)
+    this.listItems.map((listItem,index) =>{
+        this.cartService.remove(listItem)
+    })
+  }
+  inc(event:any){
+    console.log(event);
+    
+    this.listItems.map((listItem,i) =>{
+      if(this.listItems.indexOf(listItem)==i){
+        this.value +=1
+      }
+    })
+  }
+  dec(){
+
   }
 }
+

@@ -2,7 +2,6 @@ h1{
     font-size: large;
     font-weight: 600;
     margin: 15px 0;
-<<<<<<< HEAD
     text-align: center;
 }
 .wrapp-none{
@@ -91,24 +90,6 @@ h1{
     text-align: center;
     border-radius: 10px;
     padding: 5px 15px;
-=======
 }
 
-.cart-comtainer{
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
 
-.cart-img{
-    
-}
-
-.cart-content{
-
-}
-
-.cart-btn{
-
->>>>>>> 04c701a9fde4efec87b84f6d85841a561e933ed0
-}
