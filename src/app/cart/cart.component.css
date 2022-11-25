@@ -1,0 +1,93 @@
+h1{
+    font-size: large;
+    font-weight: 600;
+    margin: 15px 0;
+    text-align: center;
+}
+.wrapp-none{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 15px 0;
+    text-align: center;
+    font-family: monospace;
+}
+
+.wrapp-contai{
+    margin: auto;
+
+}
+.cart-comtainer{
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.cart-comtainer:hover{
+    box-shadow: 1px 2px #ddd;
+    cursor: pointer;
+}
+.cart-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.cart-content{
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+}
+.cart-dess{
+   width: 70%;
+}
+.count-wrap{
+    display: flex;
+    flex-direction: column;
+
+}
+.count{
+    display: flex;
+    align-items: center;
+}
+.count-btn{
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: 2px;
+    background: transparent;
+    color: rgba(0,0,0,.8);
+    width: 32px;
+    height: 32px;
+}
+.count-btn:hover{
+    opacity: 0.8;
+}
+.count input{
+    width: 50px;
+    height: 32px;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: text;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.cart-btn{
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 15px;
+}

@@ -1,5 +1,6 @@
+import { Book } from './../types/book';
 import { CartService } from './services/cart.service';
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
@@ -7,12 +8,15 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit{
-  isInCart:boolean = true
+  @Input() book:Book ={} as Book;
   constructor(private cartService:CartService){}
   ngOnInit(): void {
     
   }
   getCart(){
     return this.cartService.get()
+  }
+  handelremove(){
+    this.cartService.remove(this.book)
   }
 }

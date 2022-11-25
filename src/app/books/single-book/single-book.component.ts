@@ -11,25 +11,21 @@ import { Book } from '../../types/book';
 })
 export class SingleBookComponent implements OnInit {
   @Input() book:Book ={} as Book;
-  isInCart:boolean = false;
   listBooks: Array<Book> =[]
   constructor(private cartService:CartService, private Router:Router,private AuthService:AuthService){}
   handelAdd(){
-    if(this.AuthService.isLogin===false){
-      this.Router.navigate(['login'])
-    } else{
-      this.isInCart =true
-      this.cartService.add(this.book)
-      this.listBooks.push(this.book)
-      localStorage.setItem('book',JSON.stringify(this.listBooks))
-    }
+    // if(this.AuthService.isLogin===false){
+    //   this.Router.navigate(['login'])
+    // } else{
+    //   this.isInCart =true
+    //   this.cartService.add(this.book)
+    //   this.listBooks.push(this.book)
+    //   localStorage.setItem('book',JSON.stringify(this.listBooks))
+    // }
+    this.cartService.add(this.book)
+    alert('add suscessfull')
   }
   ngOnInit(): void {
 
-  }
-  handelremoveAdd(){
-    this.isInCart =false
-    this.cartService.remove(this.book)
-    localStorage.removeItem('book')
   }
 } 
