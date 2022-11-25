@@ -1,4 +1,5 @@
 <h1>Your cart</h1>
+<<<<<<< HEAD
 <div class="wrapper">
     <div *ngIf="getCart().length > 0" class="wrapp-contai"> 
         <ng-container  *ngFor="let book of getCart()">
@@ -28,6 +29,21 @@
         </ng-container>
      </div>
      <div *ngIf="getCart().length == 0" class="wrapp-none"> No book in your cart </div>
+=======
+<div *ngIf="getCart().length > 0" class="cart-comtainer"> 
+   <ng-container  *ngFor="let book of getCart()" >
+    <div *ngIf="isInCart">
+        <div class="cart-img"><img [src]="book.img" alt="book.name" style="width: 100px;"></div>
+        <div class="cart-content">
+            <p>
+                {{book.name}} by {{book.author}}
+            </p>
+            <p>{{book.price | currency}}</p>
+        </div>
+        <button class="cart-btn">Remove</button>
+    </div>
+   </ng-container>
+>>>>>>> 04c701a9fde4efec87b84f6d85841a561e933ed0
 </div>
 
 
