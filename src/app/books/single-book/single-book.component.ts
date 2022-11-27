@@ -11,10 +11,13 @@ import { Book } from '../../types/book';
 })
 export class SingleBookComponent implements OnInit {
   @Input() book:Book ={} as Book;
+<<<<<<< HEAD
 
   listBooks: Array<Book> =[]
   isInCart:boolean = false;
 
+=======
+>>>>>>> 748c35d20d6ba0cdc901023af018fef5b6461175
   constructor(private cartService:CartService, private Router:Router,private AuthService:AuthService){}
   handelAdd(){
     // if(this.AuthService.isLogin===false){
@@ -22,6 +25,10 @@ export class SingleBookComponent implements OnInit {
     // } else{
     //   this.isInCart =true
     //   this.cartService.add(this.book)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 748c35d20d6ba0cdc901023af018fef5b6461175
     //   this.listBooks.push(this.book)
     //   localStorage.setItem('book',JSON.stringify(this.listBooks))
     // }
@@ -31,4 +38,8 @@ export class SingleBookComponent implements OnInit {
   ngOnInit(): void {
     
   }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 748c35d20d6ba0cdc901023af018fef5b6461175

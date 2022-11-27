@@ -16,9 +16,15 @@
              </div>
              <div class="count-wrap">
                 <div class="count">
+<<<<<<< HEAD
                     <button class="count-btn" (click)="decress()">-</button>
                     <input type="text" role="spinbutton" [value]="value" >
                     <button class="count-btn" (click)="incress()">+</button>
+=======
+                    <button class="count-btn" (click)="dec()">-</button>
+                    <input type="text" role="spinbutton" [value]="value" >
+                    <button class="count-btn" (click)="inc($event)">+</button>
+>>>>>>> 748c35d20d6ba0cdc901023af018fef5b6461175
                 </div>
              </div>
              <button class="cart-btn bg-transparent hover:bg-gray-500 text-gray-700 font-semibold 
@@ -28,6 +34,11 @@
         </ng-container>
      </div>
      <div *ngIf="getCart().length == 0" class="wrapp-none"> No book in your cart </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 748c35d20d6ba0cdc901023af018fef5b6461175
 
 
 
