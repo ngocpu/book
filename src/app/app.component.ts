@@ -20,4 +20,5 @@ export class AppComponent implements OnInit{
     this.AuthService.logOut()
   }
   title = 'app';
+  
 }

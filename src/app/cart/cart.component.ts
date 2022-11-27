@@ -9,14 +9,26 @@ import { Component,OnInit,Input } from '@angular/core';
 })
 export class CartComponent implements OnInit{
   @Input() book:Book ={} as Book;
+  listItems:Array<Book> = [];
+  value:number = 1;
   constructor(private cartService:CartService){}
   ngOnInit(): void {
     
   }
   getCart(){
-    return this.cartService.get()
+    this.listItems= this.cartService.get()
+    return this.listItems
   }
   handelremove(){
-    this.cartService.remove(this.book)
+    this.listItems.map(listItem => {
+      this.cartService.remove(listItem)
+    })
+  }
+  incress(){
+
+  }
+
+  decress(){
+    
   }
 }
